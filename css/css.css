@@ -1,0 +1,25 @@
+body{
+	background:#111;
+}
+
+header{
+	position:fixed;
+	display:block;
+	top:0vh;
+	left:0px;
+	right:0vw;
+	height:6vh;
+	border-bottom: 1px solid #222;
+	background:#111;
+}
+
+header span{
+	position:relative;
+	display:block;
+	font-size:18px;
+	font-family: Montserrat;
+	font-weight:bolder;
+	user-select: none;
+	color:#fff;
+	margin:1vw;
+}
