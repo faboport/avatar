@@ -1,0 +1,91 @@
+<!DOCTYPE HTML5>
+<!--@port0f-->
+<html>
+<head>
+  	<title>Fabo</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Primary Meta Tags -->
+	<meta name="title" content="Fabo">
+	<meta name="description" content="Pedro Portocarrero es ingeniero forestal, político peruano loretano y militante del partido Alianza por el Progreso.">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://pedroportocarrero.com/">
+	<meta property="og:title" content="Pedro Portocarrero">
+	<meta property="og:description" content="Pedro Portocarrero es ingeniero forestal, político peruano loretano y militante del partido Alianza por el Progreso.">
+	<meta property="og:image" content="">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="http://pedroportocarrero.com/">
+	<meta property="twitter:title" content="Pedro Portocarrero">
+	<meta property="twitter:description" content="Pedro Portocarrero es ingeniero forestal, político peruano loretano y militante del partido Alianza por el Progreso.">
+	<meta property="twitter:image" content="">
+
+	<link rel="shortcut icon" href="ico/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="ico/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="57x57" href="ico/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="ico/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="ico/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="ico/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="ico/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="ico/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="ico/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="ico/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="ico/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="ico/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="ico/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
+	<link rel="manifest" href="ico/manifest.json">
+	<meta name="msapplication-TileColor" content="#fff">
+	<meta name="msapplication-TileImage" content="ico/ms-icon-144x144.png">
+	<meta name="theme-color" content="#fff">
+
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/css.css">	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/js.js"></script>
+
+	<style>
+			body { margin: 0; }
+			canvas { display: block; }
+		</style>
+
+</head>
+<body>
+	<header>
+		<span>Fabo</span>
+	</header>
+	<script src="js/three.js"></script>
+		<script>
+			var scene = new THREE.Scene();
+			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+			var renderer = new THREE.WebGLRenderer();
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			document.body.appendChild( renderer.domElement );
+
+			var geometry = new THREE.BoxGeometry();
+			var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+			var cube = new THREE.Mesh( geometry, material );
+			scene.add( cube );
+
+			camera.position.z = 5;
+
+			var animate = function () {
+				requestAnimationFrame( animate );
+
+				cube.rotation.x += 0.01;
+				cube.rotation.y += 0.01;
+
+				renderer.render( scene, camera );
+			};
+
+			animate();
+		</script>
+</body>
+</html>
