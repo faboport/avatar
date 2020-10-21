@@ -1,4 +1,4 @@
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { GLTFLoader } from './GLTFLoader.js';
 
 // threejs.org/license
 (function (global, factory) {
