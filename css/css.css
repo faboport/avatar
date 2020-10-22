@@ -73,3 +73,9 @@ button {
 canvas {
 	display: block;
 }
+
+bio{
+	position:relative;
+	display: block;
+	margin:25vh 25vw;
+}
