@@ -6,7 +6,7 @@ header{
 	position:fixed;
 	display:block;
 	top:0vh;
-	left:0px;
+	left:0vh;
 	right:0vw;
 	height:6vh;
 	border-bottom: 1px solid #333;
@@ -21,7 +21,29 @@ header span{
 	font-weight:bolder;
 	user-select: none;
 	color:#fff;
-	margin:1vw;
+	margin:1.5vh;
+}
+
+header a {
+	position:absolute;
+	display:inline-block;
+	top:1.5vh;
+	right:1.5vh;
+	text-align:right;
+	filter: invert(1);
+	height:3vh;
+}
+
+header a:nth-of-type(1){
+	right:1.5vh;
+}
+
+header a:nth-of-type(2){
+	right:6vh;
+}
+
+header a:hover{
+	filter:invert(0.5);
 }
 
 body {
