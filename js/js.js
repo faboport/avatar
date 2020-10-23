@@ -1,6 +1,8 @@
 $(document).ready(function(){
- $("name").click(function(){
- 			$(".sketchfab-embed-wrapper").hide();  
- 		}
- 	);
+	$("bio").hide();  
+	$("name").click(function(){
+	 		$(".sketchfab-embed-wrapper").hide();  
+	 		$("bio").show();
+		}
+	);
 });
