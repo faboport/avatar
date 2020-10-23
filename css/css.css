@@ -83,6 +83,12 @@ bio{
 	font-size:18px;
 }
 
+bio span{
+	position:relative;
+	display:block;
+	margin-bottom:2vh;
+}
+
 
 
 /* width */
