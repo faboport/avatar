@@ -79,7 +79,7 @@ canvas {
 bio{
 	position:relative;
 	display: none;
-	margin:18vh 25vw;
+	margin:9vh 25vw;
 	font-size:18px;
 }
 
@@ -88,6 +88,10 @@ bio span{
 	display:block;
 	margin-bottom:2vh;
 }
+
+
+
+
 
 
 
