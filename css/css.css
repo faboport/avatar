@@ -1,5 +1,11 @@
 body{
 	background:#111;
+	margin: 0;
+	color: #fff;
+	font-family: Monospace;
+	font-size: 13px;
+	line-height: 24px;
+	overscroll-behavior: none;
 }
 
 
@@ -63,14 +69,6 @@ header a:hover{
 
 
 
-body {
-	margin: 0;
-	color: #fff;
-	font-family: Monospace;
-	font-size: 13px;
-	line-height: 24px;
-	overscroll-behavior: none;
-}
 
 button {
 	cursor: pointer;
@@ -82,15 +80,19 @@ canvas {
 }
 
 bio{
-	position:absolute;
+	position:fixed;
 	display: none;
+	top:7vh;
+	bottom:1vh;
 	margin:0vh 25vw;
-	font-size:18px;
+	font-size:1.5vh;
 	z-index:100;
 	border-radius:12px;
 	border:1px solid #333;
 	padding: 6vh;
 	background-color:rgba(0,0,0,0.5);
+	overflow: none;
+	outline: none;
 }
 
 bio span{
@@ -98,9 +100,6 @@ bio span{
 	display:block;
 	margin-bottom:2vh;
 }
-
-
-
 
 /* width */
 ::-webkit-scrollbar {
@@ -125,6 +124,10 @@ bio span{
 
 @media only screen and (max-width: 600px) {
   bio{
-  	margin:12vh 12vw;
+  	top:7vh;
+  	bottom:1vh;
+  	margin:0vh 3vw;
   }
+
+
 }
