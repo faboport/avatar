@@ -1,13 +1,9 @@
 $(document).ready(function(){
-	$("bio").hide();  
 	$("name").click(function(){
-	 		$("bio").show();
+	 		$("body").scrollTop("500px");
 		}
 	);
 
-	$("#bio").click(function(){
-	 		$("bio").show();
-		}
-	);
+
 
 });
