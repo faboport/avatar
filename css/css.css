@@ -51,18 +51,6 @@ header a {
 	text-decoration:none;
 }
 
-header a:nth-of-type(1){
-	right:1.5vh;
-}
-
-header a:nth-of-type(2){
-	right:6vh;
-}
-
-header a:hover{
-	filter:invert(0.5);
-}
-
 button {
 	cursor: pointer;
 	text-transform: uppercase;
