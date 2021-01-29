@@ -25,40 +25,6 @@ header{
 	color:#fff;
 }
 
-header name{
-	position:relative;
-	display:block;
-	font-size:2.5vh;
-	font-family: Montserrat;
-	font-weight:bolder;
-	user-select: none;
-	color:#fff;
-	width:33vw;
-	margin:1.75vh 1.5vh;
-	letter-spacing: 0.18vh;
-	cursor: pointer;
-}
-
-header a {
-	position:absolute;
-	display:inline-block;
-	top:1.75vh;
-	right:1.5vh;
-	vertical-align: middle;
-	filter: invert(1);
-	height:3vh;
-	color:#000;
-	text-decoration:none;
-}
-
-button {
-	cursor: pointer;
-	text-transform: uppercase;
-	top:1.75vh;
-	right:1.5vh;
-	vertical-align:middle;
-}
-
 canvas {
 	display: block;
 }
@@ -82,7 +48,6 @@ obj{
 	position:relative;
 	display: block
 	height:100vh;
-	text-align: center;
 	margin:0vh 0vh 9vh;
 }
 
